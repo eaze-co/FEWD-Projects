@@ -1,0 +1,81 @@
+<html>
+
+<head>
+	<title>jQuery Test</title>
+</head>
+
+<body>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<!-- Header -->
+	
+	<h1 class="text" id="header">Color-<span id="a">A</span>-Shape</h1>
+	
+	
+	<!-- Shape Picker -->
+
+	<div id="pickerShape">
+		<h2 class="title" id="titleShape">Shape</h2>
+
+		<div class="buttonContainer" id="shapeButtonContainer">
+
+			<button class="button" id="buttonSquare">
+				<div class="shape" id="square"></div>
+			</button>	
+			
+			<button class="button" id="buttonCircle">
+				<div class="shape" id="circle"></div>
+			</button>	
+			
+			<button class="button" id="buttonTriangle">
+				<div class="shape" id="triangle"></div>
+			</button>	
+				
+		</div>	
+	</div>
+
+
+	<!-- Color Picker -->
+
+	<div id="pickerColor">
+		<h2 class="title" id="titleColor">Color</h2>
+
+		<div class="buttonContainer" id="colorButtonContainer">
+
+			<button class="button" id="buttonBlue">
+				<div class="color" id="blueColor"></div>
+			</button>
+
+			<button class="button" id="buttonGreen">
+				<div class="color"id="greenColor"></div>
+			</button>
+			
+			<button class="button" id="buttonRed">
+				<div class="color"id="redColor"></div>
+			</button>
+
+		</div>	
+	</div>
+
+
+	<!-- Display Area -->
+
+	<div id="newShapeContainer">
+		<div class="newShapeArea">
+			<div class="invisibleShape" id="bigSquare"  ></div>
+			<div class="invisibleShape" id="bigCircle"  ></div>
+			<div class="invisibleShape" id="bigTriangle"></div>
+		</div>
+	</div>
+
+
+	<!-- jQuery CDN -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+
+/*---> Media Query - Large ...................................... */
+
+@media (min-width: 1000px) {
+
+	html {
+		font-size: 30px;
+	}
+
+
+ /* ---> Body ................................................. */
+
+	#bodyContainer {
+		width: 80%;
+	}
+
+
+ /* ---> Header ............................................... */
+
+	#headerContainer {
+		width: 100%;
+		background-color: black;
+		border-top-left-radius:  15px;
+		border-top-right-radius: 15px;
+		border-top:   solid white 1px;
+		border-right: solid white 1px;
+		border-left:  solid white 1px;
+	}
+
+	#eazeLogo {
+		height: 35px;
+	}
+	
+	#searchBar {
+		margin-top:    35px;
+	}
+
+
+	
+	
+ /*---> Footer ............................................... */
+
+	#allRights {
+		line-height: 10px;
+	}
+
+} 
+
+/*End Query */
+
+

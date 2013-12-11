@@ -1,0 +1,153 @@
+* {
+	font-family: Arial;
+}
+
+#container {
+	width: 1000px;
+	height: 1500px;
+	background-color: silver;
+	margin: auto;
+}
+
+header {
+	background-color: white;
+	margin: auto;
+}
+
+h1 {
+	font-size: 50px;
+	line-height: 75px;	
+	height: 75px;
+	padding: 10px;
+	margin: 0px;
+	float: left;
+}
+
+h2 {
+	font-size: 25px;
+	text-align: left;
+	line-height: 75px;	
+	height: 75px;
+	padding: 10px 200px 10px;
+	margin: 0px;
+}
+
+nav {
+	background-color: black;
+	height: 45px;
+	padding: solid black 1px;
+}
+
+a {
+	display: inline-block;
+	background-color: black;
+	font-size: 25px;
+	line-height: 30px;
+	height: 25px;
+	width: 25%;
+	padding: 10px 0px;
+	vertical-align: 30px;
+	outline: solid white 1px;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* unvisited link */
+a:link { 
+	color: white; 
+}
+
+/* visited link */      
+a:visited { 
+	color: White; 
+}
+
+/* mouse over link */
+a:hover { 
+	color: PaleGreen; 
+} 
+
+/* selected link */
+a:active { 
+	color: PaleBlue; 
+} 
+
+#articles {
+	float: left;
+	width: 75%;
+}
+
+.article {
+	height: 400px;
+	background-color: #8AE65C;
+	outline: solid white 1px;	
+}
+
+.title {
+	float: left;
+	height: 50px;
+	width: 75%;
+	color: white;
+	background-color: #BF4DBF;
+	font-size: 25px;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: solid white 1px;
+}
+
+.date {
+	float: right;
+	height: 50px;
+	width: 25%;
+	color: white;
+	background-color: #BF4DBF;
+	font-size: 15px;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: solid white 1px;
+}
+
+p {
+	margin: 10px;
+	color: black;
+	font-size: 20px;
+}
+
+aside {
+	width: 25%;
+	outline: solid white 1px;
+	float: left;
+	color: white;
+	background-color: #00CC66;
+	font-size: 50px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 400px;
+}
+
+.sider {
+	height: 400px;
+	outline: solid white 1px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+footer {
+	position: bottom auto;
+	text-align: center;
+	line-height: 50px;
+	width: 1000px;
+	height: 50px;
+	bottom: 0px;
+	color: white;
+	background-color: black;
+	outline: solid white 1px;
+	margin: auto;
+}

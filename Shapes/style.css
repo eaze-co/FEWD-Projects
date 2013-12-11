@@ -1,0 +1,167 @@
+* {
+	color: black;
+}
+
+#header {
+	font-family: Arial;
+	width: 290px;
+	margin: 50px auto;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	padding: 5px;
+	border-bottom: dotted LightGray 1px;
+}
+
+#a {
+	color: black;
+}
+
+#pickerShape { margin-bottom: 40px; }
+
+#pickerColor { margin-bottom: 40px; }
+
+.title {
+	font-family: Arial;
+	font-size: 20px;
+	line-height: 20px;
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+	padding: 5px;
+	border-bottom: dotted LightGray 1px;
+}
+
+#titleShape { width: 65px;}
+
+#titleColor { width: 65px; }
+
+button {
+	background-color: WhiteSmoke;
+	padding: 0;
+	border: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 2px;
+}
+
+.buttonContainer { margin: auto; }
+
+#colorButtonContainer { 
+	margin: auto;
+	max-width: 160px;
+	min-width: 160px;
+}
+
+#shapeButtonContainer { 
+	margin: auto;
+	max-width: 160px;
+	min-width: 160px;
+}
+
+.shape {
+	padding: 0;
+	margin: 0;
+	vertical-align: center;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+} 
+
+#square {
+	margin: 10px auto;
+	width: 20px; 
+	height: 20px;
+	background-color: black;
+}
+
+#circle {
+	margin: 10px auto;
+	width: 20px; 
+	height: 20px;
+	background-color: black;
+	border-radius: 100%;
+}
+
+#triangle {
+	margin: 10px auto;
+	width: 0; 
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;	
+	border-bottom: 20px solid black;
+}
+
+.colorButton {
+	width: 30px; 
+	height: 30px;
+	border-style: none;
+	border: solid black 2px;
+	border-radius: 100%;
+	display: inline-block;
+	vertical-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 10px;
+	padding: 10px;
+}
+
+
+#blueColor { background-color: #5c97e6; }
+#greenColor { background-color: #98d9ad; }
+#redColor { background-color: #ff998f; }
+
+.color {
+	width:  20px; 
+	height: 20px;
+	border-style: none;
+	border-radius: 100%;
+	display: inline-block;
+	vertical-align: center;
+	margin: 10px;
+}
+
+#newShapeContainer {
+	width: 310px;
+	height: 310px;
+	margin: auto;
+	padding: 5px;
+	border: dotted LightGray 1px;
+	border-radius: 2px;
+}
+
+.newShapeArea {
+	background-color: WhiteSmoke;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+
+#bigSquare {
+	margin: 50px auto;
+	width: 200px; 
+	height: 200px;
+	background-color: black;
+	display: none;
+}
+
+#bigCircle {
+	margin: 50px auto;
+	width: 200px; 
+	height: 200px;
+	background-color: black;
+	border-radius: 100%;
+	display: none;
+}
+
+#bigTriangle {
+	margin: 50px auto;
+	width: 0; 
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;	
+	border-bottom: 200px solid black;
+	display: none;
