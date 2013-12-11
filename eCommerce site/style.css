@@ -178,10 +178,6 @@
 		border-left:   solid white 1px;
 	}
 
-	.footer {
-
-	}
-
 	.info {
 		color: white;
 	}
@@ -228,4 +224,135 @@
 } 
 
 /*End Query */
+
+
+/*---> Media Query - Large ...................................... */
+
+@media (min-width: 1000px) {
+
+	html {
+		font-size: 30px;
+	}
+
+
+ /* ---> Body ................................................. */
+
+	#bodyContainer {
+		width: 80%;
+	}
+
+
+ /* ---> Header ............................................... */
+
+	#headerContainer {
+		width: 100%;
+		background-color: black;
+		border-top-left-radius:  15px;
+		border-top-right-radius: 15px;
+		border-top:   solid white 1px;
+		border-right: solid white 1px;
+		border-left:  solid white 1px;
+	}
+
+	#eazeLogo {
+		height: 35px;
+	}
+	
+	#searchBar {
+		margin-top:    35px;
+	}
+
+
+	
+	
+ /*---> Footer ............................................... */
+
+	#allRights {
+		line-height: 10px;
+	}
+
+} 
+
+/*End Query */
+
+
+/*---> Media Query - Mobile ...................................... */
+
+@media (max-width: 649px) {   
+
+	html {
+		font-size: 15px;
+	}
+
+
+ /* ---> Body ................................................. */
+
+	#bodyContainer {
+		width: 100%;
+	}
+
+
+ /* ---> Header ............................................... */
+
+	#headerContainer {
+		border-top-left-radius:  0;
+		border-top-right-radius: 0;
+	}
+
+	#eazeLogo {
+		height: 25px;
+	}
+	
+	#searchBar {
+		margin-top:    25px;
+	}
+
+
+ /* ---> Nav .................................................. */
+
+	.container {
+		width: 100%;
+		outline: solid white 1px;
+	}
+
+	.dept {
+		font-size: 1em;
+	}
+
+	.category {
+		font-size: .8em;
+	}
+
+	
+ /*---> Images ............................................... */
+	
+	img {
+		width: 100%;
+	}
+	
+	
+ /*---> Footer ............................................... */
+
+	#footerLeft {
+		width: 50%;
+		border-bottom-left-radius: 0;
+	}
+
+	#bottomLeft:hover {
+		border-bottom-left-radius: 0;
+	}
+
+	#footerRight {
+		width: 50%;
+		border-bottom-right-radius: 0;
+	}
+
+} 
+
+/*End Query */
+
+
+
+
+
 
