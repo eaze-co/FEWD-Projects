@@ -3,44 +3,69 @@
 
 	// ---> Mens ...........................................................
 
-		$(".nav.dept.mens").click(function(){
+		$(".nav.dept.mens").hover(function(){
+			
+			$(".nav.dept").removeClass("active");
 			$(this).addClass("active");
-			$(".nav.menu.mens").slideToggle(500);
+
+			$(".nav.dept").removeClass("hidden");
+			$(this).addClass("hidden");
+
+			$(".nav.menu.mens")       .show();
+			$(".nav.menu.womens")     .hide();
+			$(".nav.menu.accessories").hide();
 		});
 
 	// ---> Womens ........................................................
 
-		$(".nav.dept.womens").click(function(){
+		$(".nav.dept.womens").hover(function(){
+
+			$(".nav.dept").removeClass("active");
 			$(this).addClass("active");
-			$(".nav.menu.womens").slideToggle(500);
+
+			$(".nav.dept").removeClass("hidden");
+			$(this).addClass("hidden");
+
+			$(".nav.menu.mens")       .hide();
+			$(".nav.menu.womens")     .show();
+			$(".nav.menu.accessories").hide();
 		});
 
 	// ---> Accessories ....................................................
 		
-		$(".nav.dept.accessories").click(function(){
+		$(".nav.dept.accessories").hover(function(){
+
+			$(".nav.dept").removeClass("active");
 			$(this).addClass("active");
-			$(".nav.menu.accessories").slideToggle(500);
+
+			$(".nav.dept").removeClass("hidden");
+			$(this).addClass("hidden");
+			
+			$(".nav.menu.mens")       .hide();
+			$(".nav.menu.womens")     .hide();
+			$(".nav.menu.accessories").show();	
 		});
 
 	// ---> To View Pics Click Menu Category ...................................
 
-		$(".category").click(function(){
-			// $(this).addClass("active");
-			$("#imgContainer").slideToggle(500);
+		$("#navContainer").on("click",".category",function(){
+			var dept = $(".nav.dept.active").text().trim();
+			var cat = $(this).data("category");
+
+			$("#imgContainer img").each(function( index ){
+            	$this = $(this);
+
+            	var imgLink = products[dept][cat][index][0];
+            	$this.attr("src", imgLink);
+        	});
+
+        	$("#imgContainer").slideDown();
 		});
 
 // ---> Pic Changer ........................................................	
 
 // document.ready shorthand
 $(function(){
-
-	// override all placeholders 
-        $('#imgContainer img').each(function( index ){
-            $this = $(this);
-
-            var imgLink = products.accessories.bandanas[index][0]
-            $this.attr('src', imgLink);
-        })
 
 	// listen for clicks on images
         $('#imgContainer').on('click','img', function(){
@@ -62,7 +87,7 @@ $(function(){
 
     // ---> what does this function do?
         function selectNextImage(current, images){
-            var images = products.accessories.bandanas[images];
+            var images = products[dept][cat][index][0];
             var imgLink = current.attr('src');
             var currentImage = images.indexOf(imgLink)
             // % = looparound to beginning (kinda)
@@ -131,11 +156,7 @@ var products =
 			"images/bandanas/bandana9/MadeontheMoonGizaBandanaNavy_L3.jpg",
 			"images/bandanas/bandana9/MadeontheMoonGizaBandanaNavy_L4.jpg"
 			]
-		],
-
-	// add another accessories category here !!!
-
-
+		]
 	},  
 
 
@@ -150,10 +171,10 @@ var products =
 			"images/jackets/jacket1/MightyMacQuiltedARORaceJacketNavyGreen_L3.jpg",
 			"images/jackets/jacket1/MightyMacQuiltedARORaceJacketNavyGreen_L4.jpg"
 			],[
-			"images/jackets/jacket1/MightyMacQuiltedARORaceJacketNavyYellow_L1.jpg",
-			"images/jackets/jacket1/MightyMacQuiltedARORaceJacketNavyYellow_L2.jpg",
-			"images/jackets/jacket1/MightyMacQuiltedARORaceJacketNavyYellow_L3.jpg",
-			"images/jackets/jacket1/MightyMacQuiltedARORaceJacketNavyYellow_L4.jpg"
+			"images/jackets/jacket2/MightyMacQuiltedARORaceJacketNavyYellow_L1.jpg",
+			"images/jackets/jacket2/MightyMacQuiltedARORaceJacketNavyYellow_L2.jpg",
+			"images/jackets/jacket2/MightyMacQuiltedARORaceJacketNavyYellow_L3.jpg",
+			"images/jackets/jacket2/MightyMacQuiltedARORaceJacketNavyYellow_L4.jpg"
 			],[
 			"images/jackets/jacket3/MightyMacRaceClothAROSportJacketNavy_L1.jpg",
 			"images/jackets/jacket3/MightyMacRaceClothAROSportJacketNavy_L2.jpg",
@@ -190,7 +211,7 @@ var products =
 			"images/jackets/jacket9/GitmanVintageSportJacketZebraStripe_L3.jpg",
 			"images/jackets/jacket9/GitmanVintageSportJacketZebraStripe_L4.jpg"
 			]
-		],
-	},  
+		]
+	}
 };		
 				
