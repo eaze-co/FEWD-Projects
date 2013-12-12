@@ -41,6 +41,10 @@
                 height: 0;
         }        
 
+        .hidden {
+        	display: none;
+        }
+
 
 /*---> Media Query - Small ...................................... */
 
@@ -115,7 +119,6 @@
         }
 
         .nav {
-                background-color: black;
                 color: white;
                 text-align: center;
         }
@@ -143,6 +146,17 @@
                 float: left;
         }
 
+/*        .mens.category:hover {
+        	background-color: LightGreen;
+        }
+
+        .womens.category:hover {
+        	background-color: LightPink; 
+        }
+
+        .accessories.category:hover {
+        	background-color: Tan; 
+        }*/
 
         
  /*---> Images ............................................... */
@@ -150,8 +164,7 @@
         #imgContainer {
                 width: 100%;
                 height: same-as-width;
-                padding-bottom: 1px;
-                
+                padding-bottom: 1px; 
                 display: none;
         }
         
@@ -201,6 +214,11 @@
                 float: left;
         }
 
+/*        .leftFooter:hover {
+        	background-color: black;
+        	color: Aquamarine;
+        }*/
+
         #footerRight {
                 background-color: black;
                 float: right;
@@ -211,23 +229,21 @@
         }
 
         #allRights {
-                color: white;
-                font-size: .5em;
-                position: relative;
-                float: right;
-                margin-bottom: 0;
-                margin-right: 15px; 
-                line-height: 25px;
+            	color: white;
+            	font-size: .5em;
+            	position: relative;
+            	float: right;
+            	margin-bottom: 0;
+            	margin-right: 15px; 
+            	line-height: 25px;
         }
 
 } 
 
-/*End Query */
-
 
 /*---> Media Query - Large ...................................... */
 
-@media (min-width: 1000px) {
+ @media (min-width: 1000px) {
 
         html {
                 font-size: 30px;
@@ -272,12 +288,10 @@
 
 } 
 
-/*End Query */
-
 
 /*---> Media Query - Mobile ...................................... */
 
-@media (max-width: 649px) {   
+ @media (max-width: 649px) {   
 
         html {
                 font-size: 15px;
@@ -460,4 +474,3 @@
 
 } 
 
-/*End Query */

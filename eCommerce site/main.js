@@ -4,7 +4,7 @@
 	// ---> Mens ...........................................................
 
 		$(".nav.dept.mens").hover(function(){
-			
+
 			$(".nav.dept").removeClass("active");
 			$(this).addClass("active");
 
@@ -60,6 +60,7 @@
         	});
 
         	$("#imgContainer").slideDown();
+        	// $(".nav.dept.mens").removeClass("hidden");   	
 		});
 
 // ---> Pic Changer ........................................................	
@@ -78,15 +79,15 @@ $(function(){
             $this.attr('src', nextImage);
         })
 
-    // ---> what does this function do?
         function selectImages(current){
-
-    // ---> which square is being clicked? ( idk?! )
             return $('#imgContainer img').index(current);
         }
 
-    // ---> what does this function do?
+    // ---> Advance to Next Image
         function selectNextImage(current, images){
+        	var dept = $(".nav.dept.active").text().trim();
+			var cat = $(this).data("category");
+			// var index = ???
             var images = products[dept][cat][index][0];
             var imgLink = current.attr('src');
             var currentImage = images.indexOf(imgLink)
@@ -171,15 +172,15 @@ var products =
 			"images/jackets/jacket1/MightyMacQuiltedARORaceJacketNavyGreen_L3.jpg",
 			"images/jackets/jacket1/MightyMacQuiltedARORaceJacketNavyGreen_L4.jpg"
 			],[
-			"images/jackets/jacket2/MightyMacQuiltedARORaceJacketNavyYellow_L1.jpg",
-			"images/jackets/jacket2/MightyMacQuiltedARORaceJacketNavyYellow_L2.jpg",
-			"images/jackets/jacket2/MightyMacQuiltedARORaceJacketNavyYellow_L3.jpg",
-			"images/jackets/jacket2/MightyMacQuiltedARORaceJacketNavyYellow_L4.jpg"
+			"images/jackets/jacket2/MightyMacRaceClothAROSportJacketNavy_L1.jpg",
+			"images/jackets/jacket2/MightyMacRaceClothAROSportJacketNavy_L2.jpg",
+			"images/jackets/jacket2/MightyMacRaceClothAROSportJacketNavy_L3.jpg",
+			"images/jackets/jacket2/MightyMacRaceClothAROSportJacketNavy_L4.jpg"
 			],[
-			"images/jackets/jacket3/MightyMacRaceClothAROSportJacketNavy_L1.jpg",
-			"images/jackets/jacket3/MightyMacRaceClothAROSportJacketNavy_L2.jpg",
-			"images/jackets/jacket3/MightyMacRaceClothAROSportJacketNavy_L3.jpg",
-			"images/jackets/jacket3/MightyMacRaceClothAROSportJacketNavy_L4.jpg"
+			"images/jackets/jacket3/MightyMacQuiltedARORaceJacketNavyYellow_L1.jpg",
+			"images/jackets/jacket3/MightyMacQuiltedARORaceJacketNavyYellow_L2.jpg",
+			"images/jackets/jacket3/MightyMacQuiltedARORaceJacketNavyYellow_L3.jpg",
+			"images/jackets/jacket3/MightyMacQuiltedARORaceJacketNavyYellow_L4.jpg"
 			],[
 			"images/jackets/jacket4/ArpenteurVillefrancheJacketBlue_L1.jpg",
 			"images/jackets/jacket4/ArpenteurVillefrancheJacketBlue_L2.jpg",
