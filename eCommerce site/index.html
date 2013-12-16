@@ -71,7 +71,7 @@
 
  <!-- Product ...............................................  -->
 
-	<div id="imgContainer" class="clearfix"> 
+	<div id="imgContainer" class="clearfix" > 
 			
        	<img class="row1 column1" data-img="1" >
        	<img class="row1 column2" data-img="2" >
@@ -87,6 +87,32 @@
 
 	</div>
 
+ <!-- Info ................................................  -->
+
+ 	<div id="infoContainer" class="clearfix" >
+
+ 		<div id="about" class="info" data-info="about" >
+ 			<h1> about </h1>
+ 			<p> this site is dedicated <br>
+ 				to the exploration of<br>
+ 				ecommerce & web design
+ 			</p>
+ 		</div>
+
+ 		<div id="faq" class="info" data-info="faq" >
+ 			<h1> faq </h1>
+ 			<p> <span>eaze co.</span> is a pseudo-brand <br>
+ 				created by eric vince </p>
+ 		</div>
+ 		
+ 		<div id="contact" class="info" data-info="contact" >
+ 			<h1> contact </h1>
+ 			<a href="mailto:eric@eaze-co.com"> eric@eaze-co.com </a>
+ 		</div>
+
+ 	</div>
+
+
 
  <!-- Footer ............................................... -->
 
@@ -94,14 +120,17 @@
 		<div id="footerContainer">
 			
 			<div class="footer left" id="footerLeft">
-				<ul class="footer left info">
-				    <li class="leftFooter" href="#" data-link="about" id="bottomLeft" > about   </li>
-				    <li class="leftFooter" href="#" data-link="faq"                   > faq     </li>
-				    <li class="leftFooter" href="#" data-link="contact"               > contact </li>
+
+				<ul>
+				    
+				    <li class="footer left about bottomLeft" data-link="about" > about </li>
+				    
+				    <li class="footer left faq" data-link="faq" > faq </li>
+				    
+				    <li class="footer left contact" data-link="contact" > contact </li>
+
 				</ul>
 			</div>
-
-			<div class="footer center" id="footerCenter"></div>
 
 			<div class="footer right" id="footerRight"> 
 				<p id="allRights"> all rights reserved. </p> 

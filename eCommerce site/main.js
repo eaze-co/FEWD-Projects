@@ -68,9 +68,49 @@
             	$this.attr("src", imgLink);
         	});
 
-        	$("#imgContainer").slideDown();  	
+        	$("#imgContainer").slideDown();
+        	$("#infoContainer").slideUp();
+        	$("#footerContainer").css("border-top", "solid white 1px");  	
 		});
 
+
+// ---> Info Container .....................................................
+
+	// about ........................................................
+
+		$(".footer.left.about").click(function(){
+			$("#about")  .show();
+			$("#faq")    .hide();
+			$("#contact").hide();
+
+			$("#infoContainer").slideDown();
+			$("#imgContainer").slideUp("slow");
+        	$("#footerContainer").css("border-top", "solid white 1px"); 
+		});
+
+	// faq ........................................................
+
+		$(".footer.left.faq").click(function(){
+			$("#about")  .hide();
+			$("#faq")    .show();
+			$("#contact").hide();
+
+			$("#infoContainer").slideDown();
+			$("#imgContainer").slideUp();			
+        	$("#footerContainer").css("border-top", "solid white 1px"); 
+		});		
+
+	// contact ........................................................
+
+		$(".footer.left.contact").click(function(){
+			$("#about")  .hide();
+			$("#faq")    .hide();
+			$("#contact").show();
+
+			$("#infoContainer").slideDown();
+			$("#imgContainer").slideUp();
+        	$("#footerContainer").css("border-top", "solid white 1px");  	
+		});
 
 // ---> Image Container ....................................................	
 
