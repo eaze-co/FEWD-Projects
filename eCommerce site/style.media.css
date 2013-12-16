@@ -1,0 +1,164 @@
+
+
+/*---> Media Query - Mobile ...................................... */
+
+ @media (max-width: 649px) { 
+
+ /* ---> Font ................................................. */
+
+    html {
+        font-size: 15px;
+    }  	
+
+ /* ---> Body ................................................. */
+
+    #bodyContainer {
+        width: 100%;
+    } 	
+
+ /* ---> Nav .................................................. */
+
+    .container {
+        width: 100%;
+        outline: solid white 1px;
+    }
+
+    .dept {
+        font-size: 1em;
+    }
+
+    .category {
+        font-size: .8em;
+    }  
+
+ /*---> Images ............................................... */
+
+    #imgContainer {
+        height: 590px;
+        overflow: scroll;
+    }   
+        
+    img {
+        width: 100%;
+    }    
+
+
+ /*---> Info ................................................. */
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    p,a {
+        font-size: .9em;
+    }    
+
+ /*---> Footer ............................................... */
+	
+	#footerLeft {
+		width: 60%;
+		font-size: .6em;
+	}
+	
+	#footerRight {	
+		width: 40%;
+	}
+
+	#allRights {
+		line-height: 25px;
+	}		
+
+}
+
+
+
+
+/*---> Media Query - Small .................................... */
+
+ @media (min-width: 635px) { 
+
+ /* ---> Font ................................................. */
+
+    html {
+        font-size: 25px;
+    }  	
+
+ /*---> Images ............................................... */
+
+        #imgContainer {
+            /*height: 590px;*/
+            overflow: scroll;
+        }  
+
+ /*---> Footer ............................................... */
+
+        #allRights {
+            font-size: .4em;
+            line-height: 25px;
+        }        
+
+}	
+
+
+
+
+/*---> Media Query - Large ...................................... */
+
+@media (min-width: 770px) {
+
+ /* ---> Font ................................................ */
+
+    html {
+        font-size: 35px;
+    }  	
+
+ /* ---> Header .............................................. */
+
+        #eazeLogo {
+            height: 35px;
+        }
+        
+        #searchBar {
+            margin-top: 35px;
+        }
+
+ /* ---> Nav ................................................. */   
+ 	
+ 	.nav {
+        line-height: 35px;
+        font-size: .8em;
+    }     
+
+ /*---> Images ............................................... */
+
+        #imgContainer {
+        	width: 100%;
+            height: 630px;
+        }   
+
+ /*---> Info ................................................. */
+
+        #infoContainer {
+            width: 100%;
+            height: 350px;
+            background-color: silver;
+            border: solid white 1px;
+            display: none;
+        }
+
+        h1 {
+            font-size: .9em;
+        }
+
+        p,a {
+            font-size: .6em;
+        }
+
+ /*---> Footer ............................................... */
+
+        #allRights {
+        	font-size: .4em;
+            line-height: 10px;
+        }
+
+}
