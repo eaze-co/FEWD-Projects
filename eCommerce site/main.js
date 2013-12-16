@@ -1,4 +1,5 @@
 
+
 // ---> Navigation Bar .....................................................
 
 	// ---> Mens ...........................................................
@@ -48,9 +49,9 @@
 
 	// ---> Reset Buttons ( * Not Working! )..................................................
 
-		// $("#navContainer").on("click",".category",function(){
-
-		// 	$(".nav.menu.category")   .hide();
+		// $(".nav.dept").mouseenter(function(){
+			
+		// 	console.log("mouseEnter");
 			
 		// });
 
@@ -60,6 +61,9 @@
 		$("#navContainer").on("click",".category",function(){
 			var dept = $(".nav.dept.active").text().trim();
 			var cat = $(this).data("category");
+
+			$('.category').removeClass('active');
+			$(this).addClass('active');
 
 			$("#imgContainer img").each(function( index ){
             	$this = $(this);
@@ -112,6 +116,7 @@
         	$("#footerContainer").css("border-top", "solid white 1px");  	
 		});
 
+
 // ---> Image Container ....................................................	
 
  // document.ready shorthand
@@ -133,14 +138,12 @@
         }
 
     // ---> Advance to Next Image
-        function selectNextImage(current, images){
+        function selectNextImage(current, index){
         	var dept = $(".nav.dept.active").text().trim();
-			var cat = $(this).data("category");
-			// var index = ???
-            var images = products[dept][cat][index][0];
+			var cat = $(".category.active").text().trim();
+            var images = products[dept][cat][index];
             var imgLink = current.attr('src');
             var currentImage = images.indexOf(imgLink)
-            // % = looparound to beginning (kinda)
             nextImage = (currentImage + 1) % images.length;
             return images[nextImage];
         }
