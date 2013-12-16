@@ -163,20 +163,16 @@
 
         #imgContainer {
                 width: 100%;
-                height: same-as-width;
                 padding-bottom: 1px; 
                 display: none;
         }
         
         img {
                 width: 33.33%;
-                height: same-as-width;
                 float: left;
                 display: inline;
-                margin: none;
                 padding: 0;
                 border: solid white 1px;
-                box-sizing: border-box;
         }
         
         
