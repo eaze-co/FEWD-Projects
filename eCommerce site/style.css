@@ -1,8 +1,15 @@
 
+
 /* ---> Default Styling  ......................................... */
 
         * {
             box-sizing: border-box;
+        }
+
+        html {
+            font-size: 20px;
+            font-family: Avenir;
+            letter-spacing: .5px;
         }
 
         ul {
@@ -44,17 +51,6 @@
 
         .hidden {
         	display: none;
-        }
-
-
-/*---> Media Query - Small ...................................... */
-
-@media (min-width: 650px) {   
-
-        html {
-            font-size: 20px;
-            font-family: Avenir;
-            letter-spacing: .5px;
         }
 
 
@@ -116,8 +112,10 @@
         }
 
         .nav {
+            background-color: black;
             color: white;
             text-align: center;
+            line-height: 30px;
         }
 
         .container {
@@ -128,7 +126,6 @@
 
         .dept {
             width: 100%;
-            line-height: 30px;
             font-size: .8em;
         }
 
@@ -137,22 +134,21 @@
         }
 
         .category {
-            line-height: 30px;
             font-size: .6em;
             width: 33.33%;
             float: left;
         }
 
 /*        .mens.category:hover {
-        	background-color: LightGreen;
+            background-color: LightGreen;
         }
 
         .womens.category:hover {
-        	background-color: LightPink; 
+            background-color: LightPink; 
         }
 
         .accessories.category:hover {
-        	background-color: Tan; 
+            background-color: Tan; 
         }*/
 
         
@@ -160,15 +156,24 @@
 
         #imgContainer {
             width: 100%;
+            /*height: 590px;*/
+            overflow: scroll;
             display: none;
         }
         
-        img {
+        .buynow, img {
             width: 33.33%;
             float: left;
-            display: inline;
+            /*display: inline;*/
             padding: 0;
+            margin:0;
             border: solid white 1px;
+        }
+
+        .buynow {
+            height: 199px;
+            background-color: red;
+
         }
 
 
@@ -239,7 +244,7 @@
 
         #footerLeft {
             background-color: black;                
-            font-size: .6em;
+            font-size: .4em;
             width: 33.33%;
             height: 30px;
             line-height: 30px;
@@ -273,220 +278,7 @@
             float: right;
             margin-bottom: 0;
             margin-right: 15px; 
-            line-height: 40px;
-        }
-
-} 
-
-
-/*---> Media Query - Large ...................................... */
-
- @media (min-width: 1000px) {
-
-        html {
-            font-size: 30px;
-        }
-
-
- /* ---> Body ................................................. */
-
-        #bodyContainer {
-            width: 80%;
-        }
-
-
- /* ---> Header ............................................... */
-
-        #eazeLogo {
-            height: 35px;
-        }
-        
-        #searchBar {
-            margin-top:    35px;
-        }
-     
-        
- /*---> Footer ............................................... */
-
-        #allRights {
-            line-height: 10px;
-        }
-
-} 
-
-
-/*---> Media Query - Mobile ...................................... */
-
- @media (max-width: 649px) {   
-
-        html {
-            font-size: 15px;
-            font-family: Avenir;
-            letter-spacing: .5px;
-        }
-
-
- /* ---> Body ................................................. */
-
-        #bodyContainer {
-            width: 100%;
-            margin: auto;
-        }
-
-
- /* ---> Header ............................................... */
-
-        #headerContainer {
-            width: 100%;
-            background-color: black;
-            border-top-left-radius:  15px;
-            border-top-right-radius: 15px;
-            border-top:   solid white 1px;
-            border-right: solid white 1px;
-            border-left:  solid white 1px;
-        }
-
-        #eazeLogo {
-            height: 25px;
-            width: auto;
-            margin-top:    15px;
-            margin-bottom: 10px;
-            margin-left:   15px;
-            margin-right:  5px;
-            float: left;
-            outline: none;
-            border: none;
-        }
-        
-        #searchBar {
-            margin-top:    25px;
-            margin-bottom: 10px;
-            margin-right:  15px;
-            margin-left:   5px;
-            float: right;
-            max-width: 25%;
-            min-width: 10%;
-            height: 15px;
-            border-radius: 15px;
-            padding: 2px;
-            border: 0;
-            outline: none;
-            color: silver;
-        }
-
-
- /* ---> Nav .................................................. */
-
-        #navContainer {
-            background-color: black;
-            width: 100%;
-            border: solid white 1px;
-        }
-
-        .nav {
-            background-color: black;
-            color: white;
-            text-align: center;
-        }
-
-        .container {
-            width: 100%;
-            display: inline;
-            float: left;
-            outline: solid white 1px;
-        }
-
-        .dept {
-            width: 100%;
-            line-height: 30px;
-            font-size: 1em;
-        }
-
-        .menu {
-            display: none;
-        }
-
-        .category {
-            line-height: 30px;
-            font-size: .8em;
-            width: 33.33%;
-            float: left;
-        }
-
-
-        
- /*---> Images ............................................... */
-
-        #imgContainer {
-            width: 100%;
-            height: 590px;
-            display: none;
-            overflow: scroll;
-        }
-        
-        img {
-            width: 100%;
-            height: same-as-width;
-            float: left;
-            display: inline;
-            margin: none;
-            padding: 0;
-            border: solid white 1px;
-            box-sizing: border-box;
-        }
-        
-        
- /*---> Footer ............................................... */
-
-        #footerContainer {
-            background-color: black;
-            width: 100%;
-            border-bottom: solid white 1px;
-            border-right:  solid white 1px;
-            border-left:   solid white 1px;
-        }
-
-        .info {
-            color: white;
-        }
-
-        #footerLeft {
-            background-color: black;                
-            font-size: .6em;
-            width: 50%;
-            height: 30px;
-            line-height: 30px;
-            float: left;
-            border-bottom-left-radius: 15px;
-            box-sizing: border-box;
-        }
-
-        .bottomLeft:hover {
-            border-bottom-left-radius: 15px;
-        }
-
-        .left.footer {
-            width: 33.33%;
-            float: left;
-        }
-
-        #footerRight {
-            background-color: black;
-            float: right;
-            color: white;
-            width: 50%;
-            height: 30px;
-            border-bottom-right-radius: 15px;
-        }
-
-        #allRights {
-            color: white;
-            font-size: .5em;
-            position: relative;
-            float: right;
-            margin-bottom: 0;
-            margin-right: 15px; 
-            line-height: 25px;
+            line-height: 15px;
         }
 
 } 

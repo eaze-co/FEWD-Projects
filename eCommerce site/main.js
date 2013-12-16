@@ -130,7 +130,12 @@
             var nextImage = selectNextImage($this, selectImages($this));
 
         // change current image to next image
-            $this.attr('src', nextImage);
+        	if (!nextImage){
+        		$this.replaceWith('<div class="buynow"><p>Hello</p></div>')
+        	} else {
+	            $this.attr('src', nextImage);	
+        	}
+
         })
 
         function selectImages(current){
@@ -144,8 +149,13 @@
             var images = products[dept][cat][index];
             var imgLink = current.attr('src');
             var currentImage = images.indexOf(imgLink)
-            nextImage = (currentImage + 1) % images.length;
-            return images[nextImage];
+            if (currentImage == images.length - 1){
+            	return false;
+            } else {
+	            nextImage = (currentImage + 1) % images.length;
+    	        return images[nextImage];            	
+            }
+
         }
 
 }) 
