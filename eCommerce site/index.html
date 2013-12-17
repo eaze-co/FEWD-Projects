@@ -5,7 +5,7 @@
 <head>
 	<title> eCommerce </title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="style.media.css">
+	<!-- <link rel="stylesheet" type="text/css" href="style.media.css"> -->
 </head>
 
 
@@ -38,9 +38,9 @@
 			<li class="nav dept mens"> mens </li>
 
 			<ul class="nav menu mens clearfix">
-				<li class="mens category" data-category="jackets" > jackets </li>
-				<li class="mens category" data-category="shirts"  > shirts  </li>
-				<li class="mens category" data-category="pants"   > pants   </li>
+				<li class="mens category" data-dept="mens" data-category="jackets" > jackets </li>
+				<li class="mens category" data-dept="mens" data-category="shirts"  > shirts  </li>
+				<li class="mens category" data-dept="mens" data-category="pants"   > pants   </li>
 			</ul>
 
 		</div>	
@@ -51,9 +51,9 @@
 			<li class="nav dept womens"> womens </li>
 
 			<ul class="nav menu womens clearfix">
-				<li class="womens category" data-category="sweaters" > sweaters </li>
-				<li class="womens category" data-category="dresses"  > dresses  </li>
-				<li class="womens category" data-category="pants"    > pants    </li>
+				<li class="womens category" data-dept="womens" data-category="sweaters" > sweaters </li>
+				<li class="womens category" data-dept="womens" data-category="dresses"  > dresses  </li>
+				<li class="womens category" data-dept="womens" data-category="pants"    > pants    </li>
 			</ul>
 
 		</div>
@@ -64,9 +64,9 @@
 			<li class="nav dept accessories"> accessories </li>
 
 			<ul class="nav menu accessories clearfix">
-				<li class="accessories category" data-category="bags"     > bags     </li>
-				<li class="accessories category" data-category="shoes"    > shoes    </li>
-				<li class="accessories category" data-category="bandanas" > bandanas </li>
+				<li class="accessories category" data-dept="accessories" data-category="bags"     > bags     </li>
+				<li class="accessories category" data-dept="accessories" data-category="shoes"    > shoes    </li>
+				<li class="accessories category" data-dept="accessories" data-category="bandanas" > bandanas </li>
 			</ul>
 
 		</div>
@@ -77,18 +77,54 @@
  <!-- Product .............................................  -->
 
 	<div id="imgContainer" class="clearfix" > 
-			
-       	<div class="product"> <img data-img="1"> </div>
-       	<div class="product"> <img data-img="2"> </div>
-       	<div class="product"> <img data-img="3"> </div> 
+		
+	 <!-- row 1	 -->
+       	<div class="productWrapper"> 
+       		<img data-img="1">
+       		<div class="buyThis"></div>
+       	</div>
+       	
+       	<div class="productWrapper"> 
+       		<img data-img="2">
+       		<div class="buyThis"></div>
+       	</div>
+       	
+       	<div class="productWrapper"> 
+       		<img data-img="3">
+       		<div class="buyThis"></div>
+       	</div> 
 
-       	<div class="product"> <img data-img="4"> </div>
-       	<div class="product"> <img data-img="5"> </div>
-       	<div class="product"> <img data-img="6"> </div>
+	 <!-- row 2	 -->
+       	<div class="productWrapper"> 
+       		<img data-img="4">
+       		<div class="buyThis"></div>
+       	</div>
+       	
+       	<div class="productWrapper"> 
+       		<img data-img="5">
+       		<div class="buyThis"></div>
+       	</div>
+       	
+       	<div class="productWrapper"> 
+       		<img data-img="6">
+       		<div class="buyThis"></div>
+       	</div>
       	
-       	<div class="product"> <img data-img="7"> </div>
-       	<div class="product"> <img data-img="8"> </div>
-       	<div class="product"> <img data-img="9"> </div>
+	 <!-- row 3	 -->
+       	<div class="productWrapper"> 
+       		<img data-img="7">
+       		<div class="buyThis"></div>
+       	</div>
+       	
+       	<div class="productWrapper"> 
+       		<img data-img="8">
+       		<div class="buyThis"></div>
+       	</div>
+       	
+       	<div class="productWrapper"> 
+       		<img data-img="9">
+       		<div class="buyThis"></div>
+       	</div>
 
 	</div>
 

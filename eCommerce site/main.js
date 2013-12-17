@@ -1,6 +1,6 @@
 
 
-// ---> Navigation Bar ....................................................
+// ---> Navigation Bar .....................................................
 
 	// Mouse Enter Dept
 
@@ -26,9 +26,6 @@
 
 		$(".nav.dept.mens").hover(function(){
 
-			$(".nav.dept").removeClass("active");
-			$(this).addClass("active");
-
 			$(".nav.dept").removeClass("hidden");
 			$(this).addClass("hidden");
 
@@ -41,9 +38,6 @@
 	// ---> Womens ........................................................
 
 		$(".nav.dept.womens").hover(function(){
-
-			$(".nav.dept").removeClass("active");
-			$(this).addClass("active");
 
 			$(".nav.dept").removeClass("hidden");
 			$(this).addClass("hidden");
@@ -58,9 +52,6 @@
 		
 		$(".nav.dept.accessories").hover(function(){
 
-			$(".nav.dept").removeClass("active");
-			$(this).addClass("active");
-
 			$(".nav.dept").removeClass("hidden");
 			$(this).addClass("hidden");
 			
@@ -73,7 +64,7 @@
 	// ---> To View Pics Click Menu Category ...............................
 
 		$("#navContainer").on("click",".category",function(){
-			var dept = $(".nav.dept.active").text().trim();
+			var dept = $(this).data("dept");
 			var cat = $(this).data("category");
 
 			$('.category').removeClass('active');
@@ -158,10 +149,10 @@
 
     // ---> Advance to Next Image
         function selectNextImage(current, index){
-        	var dept         = $(".dept.active").text().trim();
-			var cat          = $(".category.active").text().trim();
-            var images       = products[dept][cat][index];
-            var imgLink      = current.attr('src');
+			var dept = $(".active").data("dept");
+			var cat  = $(".active").data("category");
+            var images  = products[dept][cat][index];
+            var imgLink = current.attr('src');
             var currentImage = images.indexOf(imgLink)
             // if (currentImage == images.length - 1){
             	// return false;

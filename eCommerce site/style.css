@@ -161,18 +161,24 @@
             display: none;
         }
         
-        .buynow, img {
+        .productWrapper {
             width: 33.33%;
+            height: same-as-width;
             float: left;
-            /*display: inline;*/
             padding: 0;
             margin:0;
             border: solid white 1px;
         }
 
-        .buynow {
-            height: 199px;
+        img {
+            width: 100%;    
+        }
+
+        .buyThis {
+            width: 100%;
+            height: 100px;
             background-color: red;
+            display: none;
         }
 
 
