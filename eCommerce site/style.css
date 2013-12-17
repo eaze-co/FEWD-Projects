@@ -157,7 +157,7 @@
         #imgContainer {
             width: 100%;
             /*height: 590px;*/
-            overflow: scroll;
+            /*overflow: scroll;*/
             display: none;
         }
         
@@ -173,7 +173,6 @@
         .buynow {
             height: 199px;
             background-color: red;
-
         }
 
 

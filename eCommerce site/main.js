@@ -1,8 +1,28 @@
 
 
-// ---> Navigation Bar .....................................................
+// ---> Navigation Bar ....................................................
 
-	// ---> Mens ...........................................................
+	// Mouse Enter Dept
+
+		// $(".nav.dept").mouseenter(function(){
+			
+		// 	console.log(event.type);
+			
+		// 	$(".nav.dept").removeClass("hidden");
+		// 	$(this).addClass("hidden");
+		// });
+
+	// Mouse  Dept
+
+		// $(".nav.dept").mouseleave(function(){
+
+		// 	console.log(event.type);
+			
+		// 	$(".nav.dept").removeClass("hidden");
+		// 	$(this).addClass("hidden");
+		// });	
+
+	// ---> Mens ..........................................................
 
 		$(".nav.dept.mens").hover(function(){
 
@@ -16,6 +36,7 @@
 			$(".nav.menu.womens")     .hide();
 			$(".nav.menu.accessories").hide();
 		});
+
 
 	// ---> Womens ........................................................
 
@@ -32,6 +53,7 @@
 			$(".nav.menu.accessories").hide();
 		});
 
+
 	// ---> Accessories ....................................................
 		
 		$(".nav.dept.accessories").hover(function(){
@@ -46,14 +68,6 @@
 			$(".nav.menu.womens")     .hide();
 			$(".nav.menu.accessories").show();	
 		});
-
-	// ---> Reset Buttons ( * Not Working! )..................................................
-
-		// $(".nav.dept").mouseenter(function(){
-			
-		// 	console.log("mouseEnter");
-			
-		// });
 
 
 	// ---> To View Pics Click Menu Category ...............................
@@ -144,10 +158,10 @@
 
     // ---> Advance to Next Image
         function selectNextImage(current, index){
-        	var dept = $(".nav.dept.active").text().trim();
-			var cat = $(".category.active").text().trim();
-            var images = products[dept][cat][index];
-            var imgLink = current.attr('src');
+        	var dept         = $(".dept.active").text().trim();
+			var cat          = $(".category.active").text().trim();
+            var images       = products[dept][cat][index];
+            var imgLink      = current.attr('src');
             var currentImage = images.indexOf(imgLink)
             // if (currentImage == images.length - 1){
             	// return false;
@@ -162,7 +176,6 @@
 
 
 // ---> imgLink(s) ........................................................
-
 
 var products = 
 
