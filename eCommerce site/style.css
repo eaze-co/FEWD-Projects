@@ -2,9 +2,7 @@
 
 /* ---> Default Styling  ......................................... */
 
-        * {
-            box-sizing: border-box;
-        }
+        * { box-sizing: border-box; }
 
         html {
             font-size: 20px;
@@ -30,11 +28,6 @@
             background-color: silver;
         }
 
-        .active { 
-          /*color: black;
-            background-color: silver;*/
-        } 
-
         .clearfix:after {
             content: ".";
             display: block;
@@ -44,9 +37,7 @@
             height: 0;
         }        
 
-        .hidden {
-        	display: none;
-        }
+        .hidden { display: none; }
 
 
  /* ---> Body ................................................. */
@@ -125,9 +116,7 @@
             font-size: 1em;
         }
 
-        .menu {
-            display: none;
-        }
+        .menu { display: none; }
 
         .category {
             font-size: .6em;
@@ -135,17 +124,17 @@
             float: left;
         }
 
-        .mens.category:hover {
-            background-color: LightGreen;
-        }
+/*        .mens.category:hover {
+            background-color: SlateGray ;
+        }*/
 
-        .womens.category:hover {
-            background-color: LightPink; 
-        }
+/*        .womens.category:hover {
+            background-color: LavenderBlush ; 
+        }*/
 
-        .accessories.category:hover {
-            background-color: Tan; 
-        }
+/*        .accessories.category:hover {
+            background-color: PaleGoldenRod; 
+        }*/
 
         
  /*---> Images ............................................... */
@@ -157,16 +146,13 @@
         
         .productWrapper {
             width: 33.33%;
-            height: same-as-width;
             float: left;
             padding: 0;
             margin:0;
             border: solid white 1px;
         }
 
-        img {
-            width: 100%;    
-        }
+        img { width: 100%; }
 
         .buyThis {
             width: 100%;
@@ -200,9 +186,7 @@
             margin-bottom: 20px;
         }
 
-        p,a {
-            font-size: .7em;
-        }
+        p,a { font-size: .7em; }
 
         a:link {
             text-decoration: none;
@@ -214,21 +198,9 @@
             color: white;
         }
 
-        span {
-            color: white;
-        }
+        span { color: white; }
                
-        #about {
-            display: none;
-        }   
-
-        #faq {
-            display: none;    
-        }
-
-        #contact {
-            display: none;
-        }    
+        #about, #faq, #contact { display: none; }    
 
         
  /*---> Footer ............................................... */
@@ -244,7 +216,7 @@
 
         #footerLeft {
             background-color: black;                
-            font-size: .5em;
+            font-size: .6em;
             width: 33.33%;
             height: 30px;
             line-height: 30px;
@@ -253,9 +225,7 @@
             box-sizing: border-box;
         }
 
-        .bottomLeft:hover {
-            border-bottom-left-radius: 15px;
-        }
+        .bottomLeft:hover { border-bottom-left-radius: 13px; }
 
         .left.footer {
             width: 33.33%;
@@ -273,12 +243,12 @@
 
         #allRights {
             color: white;
-            font-size: .4em;
+            font-size: .5em;
             position: relative;
             float: right;
             margin-bottom: 0;
             margin-right: 15px; 
-            line-height: 30px;
+            line-height: 25px;
         }
 
 } 

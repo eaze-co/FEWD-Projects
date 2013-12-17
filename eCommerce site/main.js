@@ -61,7 +61,7 @@
             	$this.attr("src", imgLink);
         	});
 
-        	$("#imgContainer").slideDown("swing");
+        	$("#imgContainer").slideDown("linear");
         	$("#infoContainer").slideUp();
         	$("#footerContainer").css("border-top", "solid white 1px");  	
 		});
