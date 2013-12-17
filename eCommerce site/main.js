@@ -118,15 +118,18 @@
         // decide which image is next                
             var nextImage = selectNextImage($this, selectImages($this));
 
-        // change current image to next image
-        	// if (!nextImage){
-        		// $this.replaceWith('<div class="buynow"><p>Hello</p></div>')
-        	// } else {
+        	 // Show ".loveItBuyIt"
+        	if (!nextImage){
+        		$(".loveItBuyIt").show();
+        	} else {
+
+        	 // change current image to next image	
 	            $this.attr('src', nextImage);	
-        	// }
+        	}
 
         })
 
+         // Select Next Image
         function selectImages(current){
             return $('#imgContainer img').index(current);
         }
@@ -138,13 +141,16 @@
             var images  = products[dept][cat][index];
             var imgLink = current.attr('src');
             var currentImage = images.indexOf(imgLink)
-            // if (currentImage == images.length - 1){
-            	// return false;
-            // } else {
+            
+             // Show ".loveItBuyIt"
+            if (currentImage == images.length - 1){
+            	return false;
+            } else {
+
+             // change current image to next image	
 	            nextImage = (currentImage + 1) % images.length;
     	        return images[nextImage];            	
-            // }
-
+            }
         }
 
 }) 
