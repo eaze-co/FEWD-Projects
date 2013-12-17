@@ -10,7 +10,10 @@
 
  /* ---> Header .............................................. */
 
-    #eazeLogo { height: 35px; }
+    #eazeLogo { 
+        height: 35px;
+        margin-top: 15px; 
+    }
     
     #searchBar { margin-top: 35px; }
 
