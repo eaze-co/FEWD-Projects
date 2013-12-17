@@ -2,29 +2,9 @@
 
 // ---> Navigation Bar .....................................................
 
-	// Mouse Enter Dept
-
-		// $(".nav.dept").mouseenter(function(){
-			
-		// 	console.log(event.type);
-			
-		// 	$(".nav.dept").removeClass("hidden");
-		// 	$(this).addClass("hidden");
-		// });
-
-	// Mouse  Dept
-
-		// $(".nav.dept").mouseleave(function(){
-
-		// 	console.log(event.type);
-			
-		// 	$(".nav.dept").removeClass("hidden");
-		// 	$(this).addClass("hidden");
-		// });	
-
 	// ---> Mens ..........................................................
 
-		$(".nav.dept.mens").hover(function(){
+		$(".nav.dept.mens").mouseenter(function(){
 
 			$(".nav.dept").removeClass("hidden");
 			$(this).addClass("hidden");
@@ -34,10 +14,9 @@
 			$(".nav.menu.accessories").hide();
 		});
 
-
 	// ---> Womens ........................................................
 
-		$(".nav.dept.womens").hover(function(){
+		$(".nav.dept.womens").mouseenter(function(){
 
 			$(".nav.dept").removeClass("hidden");
 			$(this).addClass("hidden");
@@ -47,10 +26,9 @@
 			$(".nav.menu.accessories").hide();
 		});
 
-
 	// ---> Accessories ....................................................
 		
-		$(".nav.dept.accessories").hover(function(){
+		$(".nav.dept.accessories").mouseenter(function(){
 
 			$(".nav.dept").removeClass("hidden");
 			$(this).addClass("hidden");
@@ -60,6 +38,12 @@
 			$(".nav.menu.accessories").show();	
 		});
 
+	 // ---> Reset Nav .....................................................
+
+		$(".nav.container").mouseleave(function(){
+			$(".nav.dept").removeClass("hidden");
+			$(".nav.menu")       .hide();
+		});	
 
 	// ---> To View Pics Click Menu Category ...............................
 
@@ -77,7 +61,7 @@
             	$this.attr("src", imgLink);
         	});
 
-        	$("#imgContainer").slideDown();
+        	$("#imgContainer").slideDown("swing");
         	$("#infoContainer").slideUp();
         	$("#footerContainer").css("border-top", "solid white 1px");  	
 		});
@@ -93,7 +77,7 @@
 			$("#contact").hide();
 
 			$("#infoContainer").slideDown();
-			$("#imgContainer").slideUp("slow");
+			$("#imgContainer").slideUp();
         	$("#footerContainer").css("border-top", "solid white 1px"); 
 		});
 
