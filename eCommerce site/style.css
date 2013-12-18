@@ -159,16 +159,18 @@
 
  /*---> Love It / Buy It ............................................. */
 
-/*        .loveItBuyIt {
-            width:  100%;
-            height: 100%;
-            background-color: red;
-            opacity: .2;
+        .loveItBuyIt {
+            width:  200px;
+            height: 200px;
+            background-image: url("loveItBuyIt/heartcart.png");
+            background-size: cover;
+            /*background-color: white;*/
+            opacity: .8;
             float: left;
             z-index: 3;
             display: none;
             position: absolute; 
-        }*/
+        }
 
 
  /*---> Info ................................................. */

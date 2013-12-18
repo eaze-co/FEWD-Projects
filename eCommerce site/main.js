@@ -63,8 +63,8 @@
 
         	$("#imgContainer").slideDown();
         	$("#infoContainer").slideUp();
-        	$("#footerContainer").css("border-top", "solid white 1px");  	
-		});
+        	$("#footerContainer").css("border-top", "solid white 1px");	
+		})
 
 
 // ---> Info Container .....................................................
@@ -104,6 +104,16 @@
 			$("#imgContainer").slideUp();
         	$("#footerContainer").css("border-top", "solid white 1px");  	
 		});
+
+
+// ---> Love It / Buy It Width & Height ....................................
+
+	// get width & height of ".productImage"
+	var imgWidth = $(".productWrapper").width();
+		console.log(imgWidth);
+
+	var imgHeight = $(".productWrapper").height();
+		console.log(imgHeight);	
 
 
 // ---> Image Container ....................................................	
