@@ -154,22 +154,20 @@
 
         img { 
             width: 100%;
+            z-index: 1;
         }
 
 
  /*---> Love It / Buy It ............................................. */
 
         .loveItBuyIt {
-            width:  200px;
-            height: 200px;
-            background-image: url("loveItBuyIt/heartcart.png");
+            background-image: url("loveItBuyIt/heartcart2.png");
             background-size: cover;
-            /*background-color: white;*/
-            opacity: .8;
+            opacity: .9;
             float: left;
-            z-index: 3;
             display: none;
             position: absolute; 
+            z-index: 2;
         }
 
 

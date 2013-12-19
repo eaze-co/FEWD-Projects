@@ -36,6 +36,13 @@
     .productWrapper { width: 100%; }    
 
 
+ /*---> Love It / Buy It ............................................. */
+
+        .loveItBuyIt {
+            overflow: scroll;
+            position: absolute; 
+        }    
+
  /*---> Footer ............................................... */
 	
 	#footerLeft { width: 60%; }

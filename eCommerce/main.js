@@ -63,7 +63,8 @@
 
         	$("#imgContainer").slideDown();
         	$("#infoContainer").slideUp();
-        	$("#footerContainer").css("border-top", "solid white 1px");	
+        	$("#footerContainer").css("border-top", "solid white 1px");
+        	$(".loveItBuyIt").hide();	
 		})
 
 
@@ -108,12 +109,14 @@
 
 // ---> Love It / Buy It Width & Height ....................................
 
+	
 	// get width & height of ".productImage"
-	var imgWidth = $(".productWrapper").width();
-		console.log(imgWidth);
 
-	var imgHeight = $(".productWrapper").height();
-		console.log(imgHeight);	
+	$(window).resize(function() {
+		var imgWidth = $(".productWrapper").width();
+		var imgHeight = $(".productWrapper").height();
+		$(".loveItBuyIt").css({ width: imgWidth, height: imgHeight });
+	});
 
 
 // ---> Image Container ....................................................	
@@ -126,15 +129,22 @@
             $this = $(this);
 
         // decide which image is next                
-            var nextImage = selectNextImage($this, selectImages($this));
-
-        	 // Show ".loveItBuyIt"
+            var dept = $(".active").data("dept");
+			var cat  = $(".active").data("category");
+            var images  = products[dept][cat][selectImages($this)];
+            var imgLink = $this.attr('src');
+            var currentImage = images.indexOf(imgLink)
+            var nextImage = (currentImage + 1) % images.length;
+			$this.attr('src', images[nextImage]);
+        	 
+        // Show ".loveItBuyIt"
         	if (!nextImage){
-        		$(".loveItBuyIt").show();
-        	} else {
 
-        	 // change current image to next image	
-	            $this.attr('src', nextImage);	
+        		var imgWidth = $(".productWrapper").width();
+				var imgHeight = $(".productWrapper").height();
+				$(".loveItBuyIt").css({ width: imgWidth, height: imgHeight });
+
+        		$(".loveItBuyIt").show();
         	}
 
         })
@@ -142,25 +152,6 @@
          // Select Next Image
         function selectImages(current){
             return $('#imgContainer img').index(current);
-        }
-
-    // ---> Advance to Next Image
-        function selectNextImage(current, index){
-			var dept = $(".active").data("dept");
-			var cat  = $(".active").data("category");
-            var images  = products[dept][cat][index];
-            var imgLink = current.attr('src');
-            var currentImage = images.indexOf(imgLink)
-            
-             // Show ".loveItBuyIt"
-            if (currentImage == images.length - 1){
-            	return false;
-            } else {
-
-             // change current image to next image	
-	            nextImage = (currentImage + 1) % images.length;
-    	        return images[nextImage];            	
-            }
         }
 
 }) 
