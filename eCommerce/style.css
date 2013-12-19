@@ -165,9 +165,9 @@
             background-size: cover;
             opacity: .9;
             float: left;
-            display: none;
             position: absolute; 
             z-index: 2;
+            display: none;
         }
 
 

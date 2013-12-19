@@ -64,7 +64,7 @@
         	$("#imgContainer").slideDown();
         	$("#infoContainer").slideUp();
         	$("#footerContainer").css("border-top", "solid white 1px");
-        	$(".loveItBuyIt").hide();	
+        	// $(".loveItBuyIt").hide();	
 		})
 
 
@@ -136,8 +136,13 @@
             var currentImage = images.indexOf(imgLink)
             var nextImage = (currentImage + 1) % images.length;
 			$this.attr('src', images[nextImage]);
+
+		 // Select Next Image
+        	function selectImages(current){
+            	return $('#imgContainer img').index(current);
+        }
         	 
-        // Show ".loveItBuyIt"
+        // Insert ".loveItBuyIt"
         	if (!nextImage){
 
         		var imgWidth = $(".productWrapper").width();
@@ -145,15 +150,11 @@
 				$(".loveItBuyIt").css({ width: imgWidth, height: imgHeight });
 
         		$(".loveItBuyIt").show();
+
+        		// var loveItBuyIt = $("<div class="loveItBuyIt"></div>");
+				// $this.attr(".engagedProduct").append(loveItBuyIt);
         	}
-
         })
-
-         // Select Next Image
-        function selectImages(current){
-            return $('#imgContainer img').index(current);
-        }
-
 }) 
 
 
